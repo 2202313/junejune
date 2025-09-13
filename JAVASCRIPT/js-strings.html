@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width-device-width,
+    initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <body>
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo"></p>
+
+<h1>JavaScript Template Strings</h1>
+<h2>Multiline Strings</h2>
+
+<p id="demo1"></p>
+
+<h2>Never Create Strings as Objects</h2>
+<p>JavaScript objects cannot be compared.</p>
+
+<p id="demo2"></p>
+
+<h1>Interpolation</h1>
+<h1>JavaScript Template Strings</h1>
+<h2>Variables in Strings</h2>
+
+<p id="demo3"></p>
+
+<h1> Expression Substition</h1>
+<h1>JavaScript Template Strings</h1>
+<h2>Expressions in Strings</h2>
+
+<p id="demo4"></p>
+
+
+<script>
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+
+let text2 =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demo1").innerHTML = text2;
+
+let x = new String ("Myna");
+let y = new String ("Francis");
+document.getElementById("demo2").innerHTML = (x===y);
+
+let firstName = "Noel";
+let lastName = "Caya";
+
+let text3 = `Welcome ${firstName}, ${lastName}!`;
+
+document.getElementById("demo3").innerHTML = text3;
+
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+document.getElementById("demo4").innerHTML = total;
+
+
+
+
+</script>
+
+
+    </body>
+</html>
